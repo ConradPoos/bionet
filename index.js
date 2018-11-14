@@ -65,12 +65,12 @@ if(cmd === `${prefix}server`) {
   
   
   
-  if(cmd === `${prefix}say`) {
-    if(message.member.hasPermission("MANAGE_MESSAGES")) {
-    const sayMessage = args.join(" ");
-    message.delete().catch(O_o=>{});
-    message.channel.send(sayMessage);
-  }}
+  //if(cmd === `${prefix}say`) {
+    //if(message.member.hasPermission("MANAGE_MESSAGES")) {
+    //const sayMessage = args.join(" ");
+    //message.delete().catch(O_o=>{});
+    //message.channel.send(sayMessage);
+  //}}
   
   
   
