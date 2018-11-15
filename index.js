@@ -15,7 +15,7 @@ if(cmd === `${prefix}help`) {
       .addField("bn!help", "Shows this menu")
       .addField("bn!server", "Shows information about the current server")
       .addField("bn!faq", "Lists some FAQ's about the bot")
-      .addField("bn!purge", "Clears the specified amount of messages. MUST HAVE PERMISSION: MANAGE_MESSAGES")
+      .addField("bn!purge", "Clears the specified amount of messages. Author must have permission: Manage Messages")
       .setFooter("bioNET made by ConradPoos#0597 and Tech#6302")
     message.channel.send(embed);
   }
