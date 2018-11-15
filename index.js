@@ -101,8 +101,6 @@ if(cmd === `${prefix}purge`) {
   
   
   
-  
-  
   bot.on("ready", async () => {
     console.log("[Bot] : Successful Launch...");
 setInterval(() => {
