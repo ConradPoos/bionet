@@ -16,7 +16,7 @@ if(cmd === `${prefix}help`) {
       .addField("bn!server", "Shows information about the current server")
       .addField("bn!faq", "Lists some FAQ's about the bot")
       .addField("bn!purge", "Clears the specified amount of messages. Author must have permission: Manage Messages")
-      .setFooter("bioNET made by ConradPoos#0597 and Tech#6302")
+      .setFooter("bioNET made by ConradPoos#0597")
     message.channel.send(embed);
   }
   
@@ -28,7 +28,7 @@ if(cmd === `${prefix}server`) {
   .addField("Server owner:", message.guild.owner)  
   .addField("Member count:", message.guild.memberCount)
   .addField("Created on", message.createdAt)
-  .setFooter("bioNET made by ConradPoos#0597 and Tech#6302")
+  .setFooter("bioNET made by ConradPoos#0597")
   
   message.channel.sendMessage(embed);
 }
@@ -46,7 +46,8 @@ if(cmd === `${prefix}server`) {
     .addField("Is there a server for bioNET?", "Yes, and you can find it [here.](https://discord.gg/M86cApp)")
     .addField("Can I help with bioNET?", "Sure you can! In the server you can give us feedback and tell us what your experience with bioNET was!")
     .addField("Is there a way to donate?", "Not yet, but in the future there will probably be a patreon to help support development of bioNET.")
-    .setFooter("bioNET made by ConradPoos#0597 and Tech#6302")
+    .setFooter("bioNET made by ConradPoos#0597")
+    
     message.channel.sendMessage(embed);
   }
     
@@ -89,7 +90,17 @@ if(cmd === `${prefix}purge`) {
   
   
   
-  
+  if(cmd === `${prefix}credits`) {
+      let embed = new RichEmbed()
+      .setTitle("Credits")
+      .setColor(3447003)
+      .addField("Lead Developer/Creator", "Conrad#0597")
+      .addField("Retired Developer", "Tech#9818")
+      .setFooter("bioNET made by Conrad#0597")
+      message.channel.sendMessage(embed);
+  }
+      
+      
   
   
   
