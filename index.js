@@ -66,15 +66,7 @@ if(cmd === `${prefix}server`) {
     message.channel.sendMessage(embed);
     }} 
   
-  
-  
-  
-  //if(cmd === `${prefix}say`) {
-    //if(message.member.hasPermission("MANAGE_MESSAGES")) {
-    //const sayMessage = args.join(" ");
-    //message.delete().catch(O_o=>{});
-    //message.channel.send(sayMessage);
-  //}}
+ 
   
   
   
