@@ -100,7 +100,7 @@ if(cmd === `${prefix}purge`) {
       let embed = new RichEmbed()
       .setTitle("excuse me what")
       .setColor(3447003)
-      .addField("no please stop")
+      .addField("no please stop", "no")
       .setFooter("bioNET made by Conrad#0597")
       message.channel.sendMessage(embed);
   }
