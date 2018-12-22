@@ -97,6 +97,7 @@ if(cmd === `${prefix}purge`) {
       .setTitle("Credits")
       .setColor(3447003)
       .addField("Lead Developer/Creator", "Conrad#0597")
+      .addField("Additional Developers", "Pixlfyre#0416")
       .addField("Retired Developer", "Tech#9818")
       .setFooter("bioNET made by Conrad#0597")
       message.channel.sendMessage(embed);
