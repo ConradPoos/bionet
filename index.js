@@ -106,39 +106,39 @@ if(cmd === `${prefix}purge`) {
       message.channel.sendMessage(embed);
   }
   
-  if(cmd === `${prefix}food`) {
+    if(cmd === `${prefix}food`) {
      var rngfood = Math.floor(Math.random() * 11) 
-     If rngfood = 0 Then {
+     if rngfood = 0 {
         message.channel.send(":pizza:")   
      }
-      If rngfood = 1 Then {
+      if rngfood = 1 {
         message.channel.send(":hamburger:")   
      }
-      If rngfood = 2 Then {
+      if rngfood = 2 {
         message.channel.send(":doughnut:")   
      }
-      If rngfood = 3 Then {
+      if rngfood = 3 {
         message.channel.send(":apple:")   
      }
-      If rngfood = 4 Then {
+      if rngfood = 4 {
         message.channel.send(":fries:")   
      }
-      If rngfood = 5 Then {
+      if rngfood = 5 {
         message.channel.send(":bread:")   
      }
-      If rngfood = 6 Then {
+      if rngfood = 6 {
         message.channel.send(":watermelon:")   
      }
-      If rngfood = 7 Then {
+      if rngfood = 7 {
         message.channel.send(":grapes:")   
      }
-      If rngfood = 8 Then {
+      if rngfood = 8 {
         message.channel.send(":avocado:")   
      }
-      If rngfood = 9 Then {
+      if rngfood = 9 {
         message.channel.send(":cookie:")   
      }
-      If rngfood = 10 Then {
+      if rngfood = 10 {
         message.channel.send(":chocolate_bar:")   
      }
   }
