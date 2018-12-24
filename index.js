@@ -5,6 +5,7 @@ bot.on('message', async (message) => {
     let prefix = "bn!";
   const [cmd, ...args] = message.content.split(/\s+/g);
 
+    var rngfood;
 
 if(cmd === `${prefix}help`) {
   
@@ -105,7 +106,42 @@ if(cmd === `${prefix}purge`) {
       message.channel.sendMessage(embed);
   }
   
- 
+  if(cmd === `${prefix}food`) {
+     var rngfood = Math.floor(Math.random() * 11) 
+     If rngfood = 0 Then {
+        message.channel.send(":pizza:")   
+     }
+      If rngfood = 1 Then {
+        message.channel.send(":hamburger:")   
+     }
+      If rngfood = 2 Then {
+        message.channel.send(":doughnut:")   
+     }
+      If rngfood = 3 Then {
+        message.channel.send(":apple:")   
+     }
+      If rngfood = 4 Then {
+        message.channel.send(":fries:")   
+     }
+      If rngfood = 5 Then {
+        message.channel.send(":bread:")   
+     }
+      If rngfood = 6 Then {
+        message.channel.send(":watermelon:")   
+     }
+      If rngfood = 7 Then {
+        message.channel.send(":grapes:")   
+     }
+      If rngfood = 8 Then {
+        message.channel.send(":avocado:")   
+     }
+      If rngfood = 9 Then {
+        message.channel.send(":cookie:")   
+     }
+      If rngfood = 10 Then {
+        message.channel.send(":chocolate_bar:")   
+     }
+  }
   
   
   
