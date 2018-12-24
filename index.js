@@ -5,7 +5,7 @@ bot.on('message', async (message) => {
     let prefix = "bn!";
   const [cmd, ...args] = message.content.split(/\s+/g);
 
-    var rngfood = 0;
+    const rngfood = 0;
 
 if(cmd === `${prefix}help`) {
   
