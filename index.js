@@ -107,7 +107,7 @@ if(cmd === `${prefix}purge`) {
   }
   
     if(cmd === `${prefix}food`) {
-     rngfood = Math.floor(Math.random() * 11) 
+     let rngfood = Math.floor(Math.random() * 11) 
      if rngfood === 0 {
         message.channel.send(":pizza:");   
      }
