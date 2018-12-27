@@ -20,7 +20,7 @@ if(cmd === `${prefix}help`) {
       .addField("bn!credits", "Shows who is/has worked on bioNET")
       .addField("bn!food", "Randomly gives you a nice little food emoji")
       .addField("bn!yee", "no")
-      .setFooter("bioNET made by ConradPoos#0597")
+      .setFooter("bioNET made by ConradPoos#9999")
     message.channel.send(embed);
   }
   
@@ -32,7 +32,7 @@ if(cmd === `${prefix}server`) {
   .addField("Server owner:", message.guild.owner)  
   .addField("Member count:", message.guild.memberCount)
   .addField("Created on", message.createdAt)
-  .setFooter("bioNET made by ConradPoos#0597")
+  .setFooter("bioNET made by ConradPoos#9999")
   
   message.channel.sendMessage(embed);
 }
@@ -50,7 +50,7 @@ if(cmd === `${prefix}server`) {
     .addField("Is there a server for bioNET?", "Yes, and you can find it [here.](https://discord.gg/M86cApp)")
     .addField("Can I help with bioNET?", "Sure you can! In the server you can give us feedback and tell us what your experience with bioNET was!")
     .addField("Is there a way to donate?", "Not yet, but in the future there will probably be a patreon to help support development of bioNET.")
-    .setFooter("bioNET made by ConradPoos#0597")
+    .setFooter("bioNET made by Conrad#9999")
     
     message.channel.sendMessage(embed);
   }
@@ -64,6 +64,7 @@ if(cmd === `${prefix}server`) {
     .setColor(3447003)
     .addField("Name", message.author.tag)
     .addField("Account Created", message.author.createdAt)
+    .setFooter("bioNET made by Conrad#9999"
     
     message.channel.sendMessage(embed);
     }} 
@@ -90,10 +91,10 @@ if(cmd === `${prefix}purge`) {
       let embed = new RichEmbed()
       .setTitle("Credits")
       .setColor(3447003)
-      .addField("Lead Developer/Creator", "Conrad#0597")
+      .addField("Founder/Lead Developer", "Conrad#9999")
       .addField("Additional Developers", "Pixlfyre#0416, Daichi15#1295")
       .addField("Retired Developer", "Tech#9818")
-      .setFooter("bioNET made by Conrad#0597")
+      .setFooter("bioNET made by Conrad#9999")
       message.channel.sendMessage(embed);
   }
       
@@ -103,7 +104,7 @@ if(cmd === `${prefix}purge`) {
       .setTitle("excuse me what")
       .setColor(3447003)
       .addField("no please stop", "no")
-      .setFooter("bioNET made by Conrad#0597")
+      .setFooter("bioNET made by Conrad#9999")
       message.channel.sendMessage(embed);
   }
   
