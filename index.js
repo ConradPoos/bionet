@@ -64,7 +64,7 @@ if(cmd === `${prefix}server`) {
     .setColor(3447003)
     .addField("Name", message.author.tag)
     .addField("Account Created", message.author.createdAt)
-    .setFooter("bioNET made by Conrad#9999"
+    .setFooter("bioNET made by Conrad#9999")
     
     message.channel.sendMessage(embed);
     }} 
