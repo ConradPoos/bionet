@@ -10,7 +10,6 @@ process.on("unhandledRejection", console.error);
 bot.on("error", process.exit);
 
 
-
 if (cmd === `${prefix}play`) {
     let song = message.content.substr(prefix.length + 5);
     if (queue[message.guild.id] == undefined) {
@@ -42,35 +41,10 @@ maxResults: 1,
                 .addField("`Duration`", info.duration ? `${clockify(info.duration)}` : "Unavailable", true)
                 .setFooter(`Requested by ${song[1].author.tag}`, song[1].author.avatarURL)
               .setTimestamp()
-                  queue[message.guild.id].push([song, message]);
-    let recursivePlay = function() {
-      let song = queue[message.guild.id].shift();
-      ytsearch(
-        song[0],
-        {
-maxResults: 1,
-          key: envConfig.YTAPI,
-          type: "video"
-        },
-        function(err, results) {
-          if (err) return console.log(err);
-          try {
-            song[1].member.voiceChannel.join().then(voiceConnection => {
-              queue[song[1].guild.id].current = results[0].title;
-              queue[song[1].guild.id].currentLink = `https://youtube.com/watch?v=${results[0].id}`;
-              ytinfo(results[0].id, (err, info) => {
-                if (err) return console.error(err);
-              song[1].channel.send({
-            embed: new Discord.RichEmbed()
-              .setTitle("Now Playing")
-                .addField("`Song`", results[0].title ? `[${results[0].title}](https://www.youtube.com/watch?v=${results[0].id})` : "Unavailable", true)
-                .addField("`Channel`", (info.owner && info.channelId) ? `[${info.owner}](https://www.youtube.com/channel/${info.channelId})` : "Unavailable", true)
-                .addField("`Duration`", info.duration ? `${clockify(info.duration)}` : "Unavailable", true)
-                .setFooter(`Requested by ${song[1].author.tag}`, song[1].author.avatarURL)
-              .setTimestamp()
               .setColor("#961934")
           });
               });
+
           queue[song[1].guild.id].playing = true;
           song[1].member.voiceChannel.join();
           queue[song[1].guild.id].dispatcher = song[1].guild.voiceConnection.playStream(ytdl("https://www.youtube.com/watch?v=" + results[0].id, {
