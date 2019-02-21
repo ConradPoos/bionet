@@ -18,7 +18,8 @@
     "enmap-sqlite": "^2.0.3",
     "node-opus": "^0.3.0",
     "ffmpeg": "^0.0.4",
-    "fluent-ffmpeg": "^2.1.2"
+    "fluent-ffmpeg": "^2.1.2",
+    "ffmpeg-binaries": "^4.0.0"
   },
   "engines": {
     "node": "8.x"
