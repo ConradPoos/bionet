@@ -1,7 +1,6 @@
 const { Client, RichEmbed } = require('discord.js')
 const bot = new Client();
 let queue = {};
-const envConfig = require("./envConfig.json");
 const ytsearch = require("youtube-search");
 const ytinfo = require("youtube-info");
 const ytdl = require("ytdl-core");
