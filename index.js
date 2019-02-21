@@ -5,7 +5,8 @@ const ytsearch = require("youtube-search");
 const ytinfo = require("youtube-info");
 const ytdl = require("ytdl-core");
 const {queryMember, clockify} = require("./util.js");
-var {spawn} = require('child_process')
+var spawn = require('child_process').spawn
+ var child = spawn('pwd')
 const ffmpegPath = require('ffmpeg');
 spawn(ffmpegPath, ['-i', 'video.mkv', 'video.mp4']);
 process.on("uncaughtException", console.error);
