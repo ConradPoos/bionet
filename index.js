@@ -37,7 +37,7 @@ bot.on('message', async (message) => {
         song[0],
         {
 maxResults: 1,
-          key: env.YTAPI,
+          key: process.env.YTAPI,
           type: "video"
         },
         function(err, results) {
