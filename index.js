@@ -10,7 +10,22 @@ process.on("unhandledRejection", console.error);
 bot.on("error", process.exit);
 
 
-if (cmd === `${prefix}play`) {
+
+
+
+
+
+
+
+
+bot.on('message', async (message) => {        
+    let prefix = "bn!";
+  const [cmd, ...args] = message.content.split(/\s+/g);
+    
+    
+    
+    
+    if (cmd === `${prefix}play`) {
     let song = message.content.substr(prefix.length + 5);
     if (queue[message.guild.id] == undefined) {
       queue[message.guild.id] = [];
@@ -106,26 +121,13 @@ maxResults: 1,
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-bot.on('message', async (message) => {        
-    let prefix = "bn!";
-  const [cmd, ...args] = message.content.split(/\s+/g);
+    
+    
+    
+    
+    
+    
+    
 
     var rngfood = 0;
 
@@ -267,6 +269,9 @@ if(cmd === `${prefix}purge`) {
      }
   }
   
+    
+    
+   
   
   
   
