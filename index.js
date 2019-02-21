@@ -1,5 +1,14 @@
 const { Client, RichEmbed } = require('discord.js')
 const bot = new Client();
+let queue = {};
+const envConfig = require("./envConfig.json");
+const ytsearch = require("youtube-search");
+const ytinfo = require("youtube-info");
+const ytdl = require("ytdl-core");
+const {queryMember, clockify} = require("./util.js");
+process.on("uncaughtException", console.error);
+process.on("unhandledRejection", console.error);
+bot.on("error", process.exit);
 
 
 
@@ -9,6 +18,14 @@ const bot = new Client();
 bot.on('message', async (message) => {        
     let prefix = "bn!";
   const [cmd, ...args] = message.content.split(/\s+/g);
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
