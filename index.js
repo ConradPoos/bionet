@@ -5,7 +5,7 @@ const ytsearch = require("youtube-search");
 const ytinfo = require("youtube-info");
 const ytdl = require("ytdl-core");
 const {queryMember, clockify} = require("./util.js");
-const ffmpegPath = require('ffmpeg-binaries');
+const ffmpegPath = require('ffmpeg');
 spawn(ffmpegPath, ['-i', 'video.mkv', 'video.mp4']);
 process.on("uncaughtException", console.error);
 process.on("unhandledRejection", console.error);
