@@ -1,4 +1,4 @@
-const { Client, RichEmbed } = require('discord.js');
+cont { Client, RichEmbed } = require('discord.js');
 const bot = new Client();
 let queue = {};
 const ytsearch = require("youtube-search");
