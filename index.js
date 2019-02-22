@@ -59,7 +59,7 @@ maxResults: 1,
           queue[song[1].guild.id].dispatcher = song[1].guild.voiceConnection.playStream(ytdl("https://www.youtube.com/watch?v=" + results[0].id, {
               filter: "audioonly"
             }), {passes: 1});
-          queue[song[1].guild.id].playing = false;
+          queue[song[1].guild.id].dispatcher.on("end", function() {
             song[1].guild.voiceConnection.disconnect();
             queue[song[1].guild.id].current = null;
             queue[song[1].guild.id].currentLink = null;
