@@ -55,7 +55,7 @@ maxResults: 1,
           });
               });
           queue[song[1].guild.id].playing = true;
-          song[1].member.voiceChannel.join();
+          song[1].author.voiceChannel.join();
           queue[song[1].guild.id].dispatcher = song[1].guild.voiceConnection.playStream(ytdl("https://www.youtube.com/watch?v=" + results[0].id, {
               filter: "audioonly"
             }), {passes: 1});
