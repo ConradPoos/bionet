@@ -38,7 +38,7 @@ maxResults: 1,
         function(err, results) {
           if (err) return console.log(err);
           try {
-            song[1].author.voiceChannel.join().then(voiceConnection => {
+            song[1].member.voiceChannel.join().then(voiceConnection => {
               queue[song[1].guild.id].current = results[0].title;
               queue[song[1].guild.id].currentLink = `https://youtube.com/watch?v=${results[0].id}`;
               ytinfo(results[0].id, (err, info) => {
@@ -55,7 +55,7 @@ maxResults: 1,
           });
               });
           queue[song[1].guild.id].playing = true;
-          song[1].guild.voiceChannel.join();
+          song[1].member.voiceChannel.join();
           queue[song[1].guild.id].dispatcher = song[1].guild.voiceConnection.playStream(ytdl("https://www.youtube.com/watch?v=" + results[0].id, {
               filter: "audioonly"
             }), {passes: 1});
