@@ -44,7 +44,7 @@ maxResults: 1,
               ytinfo(results[0].id, (err, info) => {
                 if (err) return console.error(err);
               song[1].channel.send({
-            embed: new Discord.RichEmbed()
+            embed: new RichEmbed()
               .setTitle("Now Playing")
                 .addField("`Song`", results[0].title ? `[${results[0].title}](https://www.youtube.com/watch?v=${results[0].id})` : "Unavailable", true)
                 .addField("`Channel`", (info.owner && info.channelId) ? `[${info.owner}](https://www.youtube.com/channel/${info.channelId})` : "Unavailable", true)
@@ -71,7 +71,7 @@ maxResults: 1,
         });
           } catch (e) {
             song[1].channel.send({
-              embed: new Discord.RichEmbed()
+              embed: new RichEmbed()
                 .setTitle("Queue")
                 .setDescription(
                   "<@" +
@@ -92,7 +92,7 @@ maxResults: 1,
       recursivePlay();
     } else {
       message.channel.send({
-        embed: new Discord.RichEmbed()
+        embed: new RichEmbed()
           .setTitle("Queue")
           .setDescription("Song request `" + song + "` added to the queue.")
 .setFooter("Position: " + queue[message.guild.id].length)
