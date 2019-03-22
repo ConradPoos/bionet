@@ -1,2 +1,2 @@
 # bionet
-Git repo for the discord bot, bioNET!
+Git repo for the coolio discord bot, bioNET!
