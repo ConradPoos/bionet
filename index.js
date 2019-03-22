@@ -143,7 +143,7 @@ if(cmd === `${prefix}server`) {
   .addField("Created on", message.createdAt)
   .setFooter("bioNET made by Spork#3479")
   
-  message.channel.sendMessage(embed);
+  message.channel.send(embed);
 }
   
   
@@ -161,7 +161,7 @@ if(cmd === `${prefix}server`) {
     .addField("Is there a way to donate?", "Not yet, but in the future there will probably be a patreon to help support development of bioNET.")
     .setFooter("bioNET made by Spork#3479")
     
-    message.channel.sendMessage(embed);
+    message.channel.send(embed);
   }
     
   
@@ -175,7 +175,7 @@ if(cmd === `${prefix}server`) {
     .addField("Account Created", message.author.createdAt)
     .setFooter("bioNET made by Spork#3479")
     
-    message.channel.sendMessage(embed);
+    message.channel.send(embed);
     }} 
   
  
@@ -204,7 +204,7 @@ if(cmd === `${prefix}purge`) {
       .addField("Additional Developers", "Pixlfyre#0416, Daichi15#1295")
       .addField("Retired Developer", "Tech#9818")
       .setFooter("bioNET made by Spork#3479")
-      message.channel.sendMessage(embed);
+      message.channel.send(embed);
   }
       
       
@@ -214,7 +214,7 @@ if(cmd === `${prefix}purge`) {
       .setColor(3447003)
       .addField("no please stop", "no")
       .setFooter("bioNET made by Spork#3479")
-      message.channel.sendMessage(embed);
+      message.channel.send(embed);
   }
   
     if(cmd === `${prefix}food`) {
@@ -254,7 +254,42 @@ if(cmd === `${prefix}purge`) {
      }
   }
   
-    
+    if(cmd === `${prefix}transport`) {
+    var rngvehicle = Math.floor(Math.random() * 11) 
+     if(rngvehicle === 0) {
+        message.channel.send(":red_car:");   
+     }
+      if(rngvehicle === 1) {
+        message.channel.send(":taxi:");   
+     }
+      if(rngvehicle === 2) {
+        message.channel.send(":motorbike:");   
+     }
+      if(rngvehicle === 3) {
+        message.channel.send(":helicopter:");   
+     }
+      if(rngvehicle === 4) {
+        message.channel.send(":oncoming_bus:");   
+     }
+      if(rngvehicle === 5) {
+        message.channel.send(":rocket:");   
+     }
+      if(rngvehicle === 6) {
+        message.channel.send(":truck:");   
+     }
+      if(rngvehicle === 7) {
+        message.channel.send(":airplane:");   
+     }
+      if(rngvehicle === 8) {
+        message.channel.send(":avocado:");   
+     }
+      if(rngvehicle === 9) {
+        message.channel.send(":motorboat:");   
+     }
+      if(rngvehicle === 10) {
+        message.channel.send(":tractor:");   
+     }
+    }
     
    
   
